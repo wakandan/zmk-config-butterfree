@@ -20,7 +20,7 @@
             ;
 
     };
-    default_transform: matrix_transform0 {
+    default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <16>;
         rows = <5>;
@@ -37,7 +37,7 @@ RC(4,0) RC(4,1) RC(4,2)                 RC(4,5) RC(4,6) RC(4,7)         RC(4,8) 
         display-name = "LAYOUT";
 
         kscan = <&kscan0>;
-        transform = <&matrix_transform0>;
+        transform = <&keymap_transform_0>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 150 100    0   50       0     0     0>
