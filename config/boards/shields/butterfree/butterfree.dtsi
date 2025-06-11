@@ -14,6 +14,13 @@
         steps = <80>;
         status = "disabled";
     };
+    
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+        triggers-per-rotation = <20>;
+    };
+
 
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
