@@ -6,6 +6,15 @@
         zmk,physical-layout = &physical_layout0;
         zmk,kscan = &kscan0;
     };
+    
+    left_encoder: encoder_left {
+        compatible = "alps,ec11";5
+        a-gpios = <2   (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <80>;
+        status = "disabled";
+    };
+
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
