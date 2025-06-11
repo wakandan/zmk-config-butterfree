@@ -9,6 +9,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
     keymap {
         compatible = "zmk,keymap";
 
